@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employ registration form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section>
+        <div class="container">
+            <div id="registration-part" class="row justify-content-center mt-5">
+                <div class="col-md-6 p-5 shadow">
+                    <div class="text-center text-capitalize font-weight-bold mb-5">
+                        <h1>employ registration</h1>
+                    </div>
+                    <!-- start form -->
+                    <form id="registration-form" action="">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="">First Name</label>
+                                    <input type="text" name="" id="fast-name" class="form-control"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="">Last Name</label>
+                                    <input type="text" name="" id="last-name" class="form-control"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Address</label>
+                            <input type="text" name="" id="address" class="form-control" placeholder="Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" name="" id="email" class="form-control" placeholder="Enter Email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Contact No</label>
+                            <input type="number" name="" id="phone" class="form-control" maxlength="11"
+                                placeholder="Phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Department</label>
+                            <select name="" id="department" class="form-control" onchange="changeDepartment()" required>
+                                <option value="" selected disabled hidden>Select</option>
+                                <option value="design Department">Design Department</option>
+                                <option value="development Department">Development Department</option>
+                                <option value="research and development">Research and Development</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Blood Group</label>
+                            <select name="" id="blood-group" class="form-control" onchange="changeBloodGroup()"
+                                required>
+                                <option value="" selected disabled hidden>Select</option>
+                                <option value="B+">B+</option>
+                                <option value="O+">O+</option>
+                                <option value="OB+">OB+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="file" accept="image/*" name="image" id="file" required>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- result part -->
+            <div id="complete-reg" class="row justify-content-center mt-5">
+                <div class="col-md-6 p-5 bg-dark">
+                    <img src="" id="target-img" alt="">
+                    <p class="text-center my-3" id="employ-id"></p>
+                    <p id="show-name"></p>
+                    <p id="show-address"></p>
+                    <p class="text-lowercase" id="show-email"></p>
+                    <p id="show-phone"></p>
+                    <p id="show-department"></p>
+                    <p id="show-blood"></p>
+            
+                    <div class="text-center my-5">
+                        <button class="btn btn-warning px-4" onclick="window.print()">Print</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- js file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

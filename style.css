@@ -1,0 +1,23 @@
+#target-img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#complete-reg{
+    display: none;
+}
+#complete-reg p{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: justify;
+    margin: 0 0 10px;
+}
